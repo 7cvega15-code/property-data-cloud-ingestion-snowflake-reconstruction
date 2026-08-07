@@ -1,0 +1,16 @@
+*.duckdb
+*.db
+.env
+.env.*
+!.env.example
+__pycache__/
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+output/
+outputs/
+exports/
