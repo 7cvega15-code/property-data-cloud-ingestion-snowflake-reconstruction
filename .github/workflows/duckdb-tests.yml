@@ -1,0 +1,29 @@
+name: DuckDB demo tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      DUCKDB_VERSION: "1.5.3"
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Install pinned DuckDB CLI
+        run: |
+          curl --fail --location --silent --show-error \
+            "https://github.com/duckdb/duckdb/releases/download/v${DUCKDB_VERSION}/duckdb_cli-linux-amd64.zip" \
+            --output duckdb.zip
+          echo "35caef1fecbc8d7e2c07de4fd2cdefc5189ec9ba9e1cca228fb1a1c48cc52a8a  duckdb.zip" | sha256sum --check
+          unzip -q duckdb.zip
+          chmod +x duckdb
+          ./duckdb --version
+      - name: Run demo and executable SQL tests
+        run: ./duckdb < scripts/run_demo.sql
