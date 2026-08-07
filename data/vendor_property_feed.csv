@@ -1,0 +1,6 @@
+source_property_id,property_name,address_city,address_state,property_type,unit_count,latitude,longitude,status
+P1001,Harbor Center,Long Beach,CA,Commercial,14,33.7701,-118.1937,ACTIVE
+P1002,Maple Residences,Torrance,CA,Multifamily,48,33.8358,-118.3406,ACTIVE
+P1003,Desert Commerce Park,Phoenix,AZ,Commercial,22,33.4484,-112.0740,ACTIVE
+P1004,Soundview Apartments,Tacoma,WA,Multifamily,36,47.2529,-122.4443,ACTIVE
+P1005,River Retail Plaza,Sacramento,CA,Retail,8,38.5816,-121.4944,ACTIVE
