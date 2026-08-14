@@ -16,7 +16,7 @@ A sanitized, synthetic portfolio reconstruction of a third-party commercial/prop
 
 ## Historical context
 
-The enterprise initiative that inspired this reconstruction moved a property-data feed through an integration/data-routing layer into cloud storage and a Snowflake analytical environment. Historical validation reconciled roughly 30.8K usable records after source and processing checks. This repository recreates the architecture pattern with synthetic data only.
+The enterprise initiative that inspired this reconstruction moved a property-data feed through an integration/data-routing layer into cloud storage and a Snowflake analytical environment, with source-to-target validation and reconciliation controls. This repository recreates the architecture pattern with synthetic data only.
 
 ## Architecture
 
