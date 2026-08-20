@@ -38,16 +38,16 @@ Multiple downstream analytics use cases
 
 ## Repository structure
 
-- `data/` — synthetic vendor and reference fixtures
-- `sql/01_create_staging.sql` — landing/staging
-- `sql/02_conform_property_data.sql` — normalized entities and keys
-- `sql/03_build_curated_view.sql` — analytics-ready output
-- `sql/04_reconciliation.sql` — source-to-target checks
-- `tests/test_expectations.sql` — quality assertions
-- `docs/source_to_target.md` — generalized mapping
-- `docs/architecture.md` — design rationale
-- `docs/privacy.md` — publication guardrails
-- `scripts/run_demo.sql` — execution order
+- `data/`: synthetic vendor and reference fixtures
+- `sql/01_create_staging.sql`: landing/staging
+- `sql/02_conform_property_data.sql`: normalized entities and keys
+- `sql/03_build_curated_view.sql`: analytics-ready output
+- `sql/04_reconciliation.sql`: source-to-target checks
+- `tests/test_expectations.sql`: quality assertions
+- `docs/source_to_target.md`: generalized mapping
+- `docs/architecture.md`: design rationale
+- `docs/privacy.md`: publication guardrails
+- `scripts/run_demo.sql`: execution order
 
 ## Business value
 
